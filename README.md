@@ -19,22 +19,22 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 
 1. Clone the Repository
    
-   git clone <repository-url>
-   cd e-commerce-app
+         git clone <repository-url>
+         cd e-commerce-app
 
 2. Install Dependencies
 
-   npm install
+         npm install
    
 3. Set Environment Variables
 
-    PORT=4000
-    MONGODB_URI=your_mongo_db_url
-    JWT_SECRET=your_jwt_secret
+       PORT=4000
+       MONGODB_URI=your_mongo_db_url
+       JWT_SECRET=your_jwt_secret
 
 4. Run the Application
 
-    npm run dev
+       npm run dev
 
 
 
@@ -51,23 +51,51 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 
 1. Authentication
    
-POST https://inventory-management-system-pztw.onrender.com/api/v1/auth/signup: Register a new user.
+POST
 
-POST https://inventory-management-system-pztw.onrender.com/api/v1/auth/login: Authenticate and log in a user.
+      https://inventory-management-system-pztw.onrender.com/api/v1/auth/signup
+      
+:Register a new user.
+
+POST 
+
+      https://inventory-management-system-pztw.onrender.com/api/v1/auth/login
+      
+: Authenticate and log in a user.
 
 2.Inventory Management
 
-POST https://inventory-management-system-pztw.onrender.com/api/v1/inventory/addItemToInventory: Add an item to inventory.
+POST 
 
-POST https://inventory-management-system-pztw.onrender.com/api/v1/inventory/removeItemFromInventory: Remove an item in inventory.
+      https://inventory-management-system-pztw.onrender.com/api/v1/inventory/addItemToInventory
+      
+: Add an item to inventory.
 
-POST https://inventory-management-system-pztw.onrender.com/api/v1/cart/addItemToCart: Add an item from the user's cart.
+POST 
+
+      https://inventory-management-system-pztw.onrender.com/api/v1/inventory/removeItemFromInventory
+      
+: Remove an item in inventory.
+
+POST 
+
+      https://inventory-management-system-pztw.onrender.com/api/v1/cart/addItemToCart
+      
+: Add an item from the user's cart.
 
 3.Discount Coupons
 
-POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/addDiscountCoupon: Create a new discount coupon.
+POST 
+      
+      https://inventory-management-system-pztw.onrender.com/api/v1/discount/addDiscountCoupon
+      
+: Create a new discount coupon.
 
-POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/applyDiscountCoupon: Apply a discount coupon to the cart.
+POST 
+
+      https://inventory-management-system-pztw.onrender.com/api/v1/discount/applyDiscountCoupon
+      
+: Apply a discount coupon to the cart.
 
 
 
@@ -85,7 +113,9 @@ POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/apply
 
 ##Deployed server on render##
 
-link: https://inventory-management-system-pztw.onrender.com
+link: 
+
+      https://inventory-management-system-pztw.onrender.com
 
 
 
@@ -107,7 +137,9 @@ link: https://inventory-management-system-pztw.onrender.com
 
 ##postman api's link##
 
-link: https://api.postman.com/collections/32074520-bdac08e7-8da5-46b8-93d5-c1a7196b382f?access_key=PMAT-01J045CHEX5RV1A70VSFAHB75X
+link: 
+
+      https://api.postman.com/collections/32074520-bdac08e7-8da5-46b8-93d5-c1a7196b382f?access_key=PMAT-01J045CHEX5RV1A70VSFAHB75X
 
 Its the postman api link, you have to import in postman using this link.
 
