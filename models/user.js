@@ -29,7 +29,13 @@ const userSchema = new mongoose.Schema(
 		},
 		token: {
 			type: String,
-		}
+		},
+        products: [
+            {
+              type: mongoose.Schema.Types.ObjectId,
+              ref: 'Product'
+            }
+        ]
 	},
 	{ timestamps: true }
 );
