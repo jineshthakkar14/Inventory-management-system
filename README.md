@@ -34,17 +34,21 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 1. Authentication
    
 POST https://inventory-management-system-pztw.onrender.com/api/v1/auth/signup: Register a new user.
+
 POST https://inventory-management-system-pztw.onrender.com/api/v1/auth/login: Authenticate and log in a user.
 
 2.Inventory Management
 
 POST https://inventory-management-system-pztw.onrender.com/api/v1/inventory/addItemToInventory: Add an item to inventory.
-POST https://inventory-management-system-pztw.onrender.com/api/v1/inventory/removeItemFromInventory: Remove an item in inventory
+
+POST https://inventory-management-system-pztw.onrender.com/api/v1/inventory/removeItemFromInventory: Remove an item in inventory.
+
 POST https://inventory-management-system-pztw.onrender.com/api/v1/cart/addItemToCart: Add an item from the user's cart.
 
 3.Discount Coupons
 
 POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/addDiscountCoupon: Create a new discount coupon.
+
 POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/applyDiscountCoupon: Apply a discount coupon to the cart.
 
 
