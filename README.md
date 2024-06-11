@@ -8,6 +8,13 @@ Mongoose: MongoDB object modeling for Node.js.
 bcryptjs: Library for hashing passwords.
 jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authentication.
 
+
+
+
+
+
+
+
 ##Setup Instructions##
 
 1. Clone the Repository
@@ -28,6 +35,17 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 4. Run the Application
 
     npm run dev
+
+
+
+
+
+
+
+
+
+
+   
 
 ##API Endpoints##
 
@@ -52,15 +70,59 @@ POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/addDi
 POST https://inventory-management-system-pztw.onrender.com/api/v1/discount/applyDiscountCoupon: Apply a discount coupon to the cart.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##Deployed server on render##
 
 link: https://inventory-management-system-pztw.onrender.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##postman api's link##
 
 link: https://api.postman.com/collections/32074520-bdac08e7-8da5-46b8-93d5-c1a7196b382f?access_key=PMAT-01J045CHEX5RV1A70VSFAHB75X
 
 Its the postman api link, you have to import in postman using this link.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##Detailed explanation for authentication##
@@ -75,6 +137,24 @@ Its the postman api link, you have to import in postman using this link.
 
     Required fields: email, password.
     Validates credentials and returns a JWT token for authentication.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##Detailed explanation of inventory##
@@ -93,6 +173,25 @@ Its the postman api link, you have to import in postman using this link.
 
     Required fields: productId.
     Removes the specified product from the inventory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##detailed explanation of Discount coupons##
 
