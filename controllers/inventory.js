@@ -22,27 +22,11 @@ exports.addItemToInventory = async (req, res) => {
       product.quantity += quantity;
     } else {
       // If product does not exist, create a new product
-      product = new Product({ _id: productId, quantity, name, price, description });
+      product = new Product({ _id: productId, quantity });
     }
 
     // Save the product (either update or insert)
     await product.save();
-
-    // Find user
-    const user = await User.findById(userId);
-    if (!user) {
-      return res.status(404).json({
-        success: false,
-        message: 'User not found.',
-      });
-    }
-
-    // Check if productId already exists in user's products array
-    if (!user.products.includes(productId)) {
-      // Update user's products array
-      user.products.push(productId);
-      await user.save();
-    }
 
     res.status(200).json({
       success: true,
