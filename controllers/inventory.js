@@ -1,5 +1,5 @@
-const Product = require('../models/product'); // Adjust the path as per your project structure
-const User = require('../models/user'); // Adjust the path as per your project structure
+const Product = require('../models/product');
+const User = require('../models/user');
 
 exports.addItemToInventory = async (req, res) => {
   const { productId, quantity, name, price, description } = req.body;
@@ -57,3 +57,66 @@ exports.addItemToInventory = async (req, res) => {
     });
   }
 };
+
+exports.removeItemFromInventory = async (req, res) => {
+  const { productId, quantity } = req.body;
+  const userId = req.user.id; // Get userId from authenticated user
+
+  // Check if productId and quantity are provided
+  if (!productId || !quantity) {
+    return res.status(400).json({
+      success: false,
+      message: 'Product ID and quantity are required.',
+    });
+  }
+
+  try {
+    // Find the product by ID
+    const product = await Product.findById(productId);
+
+    if (!product) {
+      return res.status(404).json({
+        success: false,
+        message: 'Product not found.',
+      });
+    }
+
+    // Check if the quantity to remove is greater than the available quantity
+    if (product.quantity < quantity) {
+      return res.status(400).json({
+        success: false,
+        message: 'Quantity to remove exceeds available quantity.',
+      });
+    }
+
+    // Reduce the product quantity
+    product.quantity -= quantity;
+
+    // If the product quantity reaches zero, delete the product
+    if (product.quantity === 0) {
+      await Product.findByIdAndDelete(productId);
+
+      // Update user's products array to remove the product ID
+      await User.findByIdAndUpdate(
+        userId,
+        { $pull: { products: productId } },
+        { new: true }
+      );
+    } else {
+      // Save the updated product
+      await product.save();
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Product quantity updated successfully.',
+    });
+  } catch (err) {
+    console.error('Error:', err);
+    res.status(500).json({
+      success: false,
+      message: 'Error updating product quantity.',
+    });
+  }
+};
+
