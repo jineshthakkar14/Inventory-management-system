@@ -1,12 +1,12 @@
 This is a brief overview of the implementation for inventory management application using Node.js, Express, and MongoDB. The application allows users to sign up, manage inventory, add items to their cart, apply discount coupons, and more.
 
-Technologies Used
-Node.js: JavaScript runtime environment.
-Express: Web application framework for Node.js.
-MongoDB: NoSQL database for storing application data.
-Mongoose: MongoDB object modeling for Node.js.
-bcryptjs: Library for hashing passwords.
-jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authentication.
+Technologies Used<br/>
+Node.js: JavaScript runtime environment.<br/>
+Express: Web application framework for Node.js.<br/>
+MongoDB: NoSQL database for storing application data.<br/>
+Mongoose: MongoDB object modeling for Node.js.<br/>
+bcryptjs: Library for hashing passwords.<br/>
+jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authentication.<br/>
 
 <br/>
 <br/>
