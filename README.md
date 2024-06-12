@@ -13,6 +13,9 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
 
 
 ##Setup Instructions##
@@ -44,6 +47,9 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -67,6 +73,15 @@ POST
       
 : Authenticate and log in a user.
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 2.Inventory Management
 
 POST 
@@ -86,6 +101,15 @@ POST
       https://inventory-management-system-pztw.onrender.com/api/v1/cart/addItemToCart
       
 : Add an item from the user's cart.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 3.Discount Coupons
 
@@ -107,9 +131,34 @@ POST
 
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
+##Workflow##
+
+1. Signup(admin/customor)->login
+2. Add item to the inventory (protected route for admin)
+3. Remove item from the inventory (protected route for admin)
+4. Add item to the cart (protected route for customer)
+5. Add discount coupon in database (protected route for admin)
+6. Apply discount coupon in cart (protected route foe customer)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -123,13 +172,14 @@ link:
 
 
 
-
-
-
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -149,7 +199,14 @@ Its the postman api link, you have to import in postman using this link.
 
 
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -175,7 +232,14 @@ Its the postman api link, you have to import in postman using this link.
     Validates credentials and returns a JWT token for authentication.
 
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
@@ -218,7 +282,14 @@ Its the postman api link, you have to import in postman using this link.
 
 
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
