@@ -262,17 +262,17 @@ Its the postman api link, you have to import in postman using this link.
 
 #Add Item to Inventory: Admins can add items to the inventory using POST /addItemToInventory.
 
-    Required fields: name, price, description.
+    Required fields: productId, quantity.
     Creates a new product in the database.
     
 #Add Item to Cart: Customers can add items to their cart using POST /addItemToCart.
 
-    Required fields: productId, quantity.
+    Required fields: customerId, productId, quantity.
     Adds the specified quantity of the product to the user's cart.
     
 #Remove Item from Inventory: Admins can remove items from the inventory using DELETE /removeItemFromInventory.
 
-    Required fields: productId.
+    Required fields: productId, quatity.
     Removes the specified product from the inventory.
 
 
