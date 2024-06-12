@@ -8,11 +8,11 @@ Mongoose: MongoDB object modeling for Node.js.
 bcryptjs: Library for hashing passwords.
 jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authentication.
 
-
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 ##Setup Instructions##
@@ -39,7 +39,11 @@ jsonwebtoken: Library for generating JSON web tokens (JWTs) for user authenticat
 
 
 
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
